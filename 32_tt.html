@@ -1,0 +1,193 @@
+<!DOCTYPE html>   <!-- Examples of click...-->
+<html lang="en">
+<head>
+           <link rel="stylesheet" href="1_tt.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+          .frame{
+                color:  white;
+                 background-color:  blue;
+                   border-radius: 3px; 
+                   text-align: center; 
+          }    
+     </style>
+        
+              
+</head>
+<body>
+       <h1 class="frame" >Online Boook Store</h1> 
+            <div class="dv">
+                <img src="download (1).jpg" alt="" width="250px" height="350px">
+                <p>rs: 699-/</p>
+                  <div class="bt">
+                    <input type="button" value="Buy"  id="butn1" class="btp"> 
+                  </div>
+             
+            </div>
+               <div class="dv">
+                <img src="download (2).jpg" alt="" width="250px" height="350px" >
+                <p>rs: 399-/</p>
+                <div class="bt">
+                    <input type="button" value="Buy"  id= "butn2" class="btp">
+                </div>
+               
+               </div>
+
+
+               <div class="dv">
+                <img src="download (3).jpg" alt=""width="250px" height="350px" >
+                <p>rs: 259-/</p>
+                <div class="bt">
+                    <input type="button" value="Buy" id="butn3" class="btp"> 
+                </div>
+               
+               </div>
+
+
+               <div class="dv">
+                <img src="download.jpg" alt=""width="250px" height="350px" class ="btp">
+                    <p>rs: 389-/</p>
+                    <div class="bt">
+                        <input type="button" value="Buy" id="butn4"  class="btp">
+                    </div>
+                  
+               </div>
+                 
+                <div class="dv"> 
+                    <img src="download (4).jpg" alt="" width="250px" height="350px">
+                    <p>rs: 449-/</p>
+                    <div class="bt">
+                        <input type="button" value="Buy"  id="butn5" class="btp">
+                    </div>
+                    </div>
+                    <div class="dv"> 
+                      <img src="download (5).jpg" alt="" width="250px" height="350px">
+                      <p>rs: 359-/</p>
+                      <div class="bt">
+                          <input type="button" value="Buy"  id="butn6" class="btp">
+                      </div>
+                      </div>
+                      <div class="dv"> 
+                        <img src="download (6).jpg" alt="" width="250px" height="350px">
+                        <p>rs: 179-/</p>
+                        <div class="bt">
+                            <input type="button" value="Buy"  id="butn7" class="btp">
+                        </div>
+                        </div>
+                        <div class="dv"> 
+                          <img src="images.jpg" alt="" width="250px" height="350px">
+                          <p>rs: 299-/</p>
+                          <div class="bt">
+                              <input type="button" value="Buy"  id="butn8" class="btp">
+                          </div>
+                          </div>
+                          <div class="dv"> 
+                            <img src="download (8).jpg" alt="" width="250px" height="350px">
+                            <p>rs: 389-/</p>
+                            <div class="bt">
+                                <input type="button" value="Buy"  id="butn9" class="btp">
+                            </div>
+                            </div>
+                            <div class="dv"> 
+                              <img src="download (9).jpg" alt="" width="250px" height="350px">
+                              <p>rs: 649-/</p>
+                              <div class="bt">
+                                  <input type="button" value="Buy"  id="butn10" class="btp">
+                              </div>
+                </div><br>
+                  
+                     <div class="butt">
+                        <input type="button" value="Generate Bill" id="btn">
+                     </div>
+
+                
+                  
+                     <div class="tbl">
+                    <table id="table1" border="1">
+                        <tr>
+                             <th>Sl.no:</th>
+                             <th>Discription:</th>
+                             <th>Price:</th>
+                        </tr>   
+                          
+                    </table>
+                        </div>
+                     <div class="spn ">
+                    Total:-<span id="span1"></span>
+                </div>
+                     
+             
+        
+        
+             
+            
+              <script>
+                  var imgdata= [
+                      {imagesrc:"butn1", title:" Mathematics(by RD Sharma vol1, 3rd edtion)", price:699},
+                      {imagesrc:"butn2", title:" SecondaryMathematics(by RS Agrawal 12th, 2nd edition )" ,price:399} ,
+                      {imagesrc:"butn3", title:" Ncert(12th vol1 ,6th edition)", price:259},
+                      {imagesrc:"butn4",  title:" HigerMathematics(by KC Shina ,12th(5th edition))",price:389},
+                       {imagesrc:"butn5",  title:" Concept of Physics(by HC Verma 4th edition) " ,price:449},
+                       {imagesrc:"butn6", title:" Ramayana(3rd edtion)", price:359},
+                      {imagesrc:"butn7", title:"  Lucent General Knowledge( 2nd edition )" ,price:179} ,
+                      {imagesrc:"butn8", title:" Ncert Exmpler(by mtg)", price:299},
+                      {imagesrc:"butn9",  title:" Physical chem for jee(by Vk Jaiswal )",price:389},
+                       {imagesrc:"butn10",  title:" Organic Chem for jee(by Ms Chauan 4th edition) " ,price:649} 
+                  ]
+                    var final=[];
+                    
+                  var getimgsrc= document.getElementsByClassName("btp");
+                       for(var i=0; i<getimgsrc.length; i++){
+                               getimgsrc[i].addEventListener("click", sample);  // adding click funcanality to all..
+                       }
+                      function sample(event){  // this is done to add some style in documet... 
+                             if(event.target.getAttribute("class")=="class1"){
+                                event.target.setAttribute("class", "btp"); 
+                             }
+
+                                else{
+                             event.target.setAttribute("class", "class1");   }
+                               
+                             // think about this what is it..
+                      }
+                        // calculate the cost of total price of selected books...
+                         document.getElementById("btn").addEventListener("click",sample2);
+                           function sample2(){
+                                  var prc=0;
+                                  var imgselected= document.getElementsByClassName("class1");
+                                  // all selected objects are stored..
+                                 var n=0;
+ for(var i=0; i<imgselected.length; i++){
+           var imgsr=  imgselected[i].getAttribute("id");
+         for(var j=0; j<imgdata.length; j++){
+             
+                if(imgsr==imgdata[j].imagesrc){
+                    n++;
+                        prc= prc+ imgdata[j].price;
+                             var chk=0;
+                          for(var i=0; i<final.length; i++){
+                                if(final[i].slno==n){
+                                      chk=1;
+                                      break;
+                                }
+                          }
+                            if(chk==0){
+                      final.push({slno:n, tt:imgdata[j].title, pr: imgdata[j].price});
+                            }
+                }
+         }
+ }
+
+ for(var i=0; i<final.length; i++){
+                 var s= "<tr><td>" +final[i].slno+ "</td><td>"+final[i].tt+"</td><td>"+final[i].pr +"</td></tr>";  // please understand this line carefully..
+                  document.getElementById("table1").innerHTML+= s;
+           }
+        
+         document.getElementById("span1").innerHTML= "Rs. "+prc+"-/";
+                           }
+              </script>
+         
+</body>
+</html>

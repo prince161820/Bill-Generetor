@@ -1,0 +1,75 @@
+img{
+    margin-left: 20px;
+}
+.dv{
+float: left;
+margin-top: 30px;
+margin-left: 10px;
+}
+p{
+text-align: center;
+font-size: larger;
+font-weight: bold;
+color: blue;
+background-color: rgb(208, 205, 205);
+margin-left: 20px;
+margin-top: 0px;
+border-radius: 3px;
+}
+.bt{
+  text-align: center;
+}
+.btp{
+   cursor: pointer;  
+text-align: center;
+font-size: medium;
+font-weight: 600;
+  color: white;
+  padding-right: 10px;
+   padding-left: 10px;
+   background-color: rgb(102, 230, 37);
+   border-radius: 3px;
+    margin-top: 0px;
+}
+.tp{  
+   padding-top: 30px;
+   clear: left;     
+  text-align: center;
+  font-size: larger;
+   font-weight: bold;
+}
+.butt{
+    clear: left;
+     text-align: center;
+     
+}
+#btn{
+       margin-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+       background-color: rgb(32, 35, 220); 
+         color:white;
+         font-size: medium;
+          font-weight: 600;
+          border-radius: 3px;
+            cursor: pointer;
+}
+.class1{
+     background-color: rgb(20, 36, 204);
+      color: white;
+      font-size: medium;
+       font-weight: 700;
+}
+#cal{
+      font-size: medium;
+      font-weight: 700;
+}
+.tbl{
+        margin-left: 500px;
+        margin-top: 30px;
+}
+.spn{
+         font-size: medium;
+         font-weight: 600;
+         margin-left: 850px;
+}
