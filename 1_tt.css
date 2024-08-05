@@ -2,9 +2,8 @@ img{
     margin-left: 20px;
 }
 .dv{
+ margin-left: 20px;
 float: left;
-margin-top: 30px;
-margin-left: 10px;
 }
 p{
 text-align: center;
@@ -17,6 +16,8 @@ margin-top: 0px;
 border-radius: 3px;
 }
 .bt{
+     margin-top: 0px;
+    margin-bottom: 30px;
   text-align: center;
 }
 .btp{
@@ -32,7 +33,7 @@ font-weight: 600;
     margin-top: 0px;
 }
 .tp{  
-   padding-top: 30px;
+   padding-top: 10px;
    clear: left;     
   text-align: center;
   font-size: larger;
@@ -70,6 +71,15 @@ font-weight: 600;
 }
 .spn{
          font-size: medium;
-         font-weight: 600;
-         margin-left: 850px;
+         font-weight: bolder;
 }
+  /* for smallar devices.... */
+@media only screen and (max-width:768px){
+       .tbl{
+           margin-left: 0px;
+       }
+}
+/* for large devices .....*/
+@media only screen and (min-width:769px){
+
+ }    
