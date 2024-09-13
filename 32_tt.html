@@ -106,7 +106,7 @@
                   
                      <div class="tbl">
                     <table id="table1" border="1">
-                        <tr>
+                        <tr id="hd">
                              <th>Sl.no:</th>
                              <th>Discription:</th>
                              <th>Price:</th>
@@ -181,12 +181,12 @@
                 }
          }
  }
-
+     
  for(var i=0; i<final.length; i++){
                  var s= "<tr><td>" +final[i].slno+ "</td><td>"+final[i].tt+"</td><td>"+final[i].pr +"</td></tr>";  // please understand this line carefully..
                   document.getElementById("table1").innerHTML+= s;
            }
-        
+          
          document.getElementById("span1").innerHTML= "Rs. "+prc+"-/";
                            }
               </script>
