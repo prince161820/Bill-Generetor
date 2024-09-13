@@ -1,85 +1,121 @@
+body{
+  background-image: url("https://w0.peakpx.com/wallpaper/137/48/HD-wallpaper-beautiful-hearts-heart-purple-thumbnail.jpg");
+   background-attachment: fixed; 
+
+}
 img{
-    margin-left: 20px;
+ margin-left: 20px;
+ border: 5px solid gray;
 }
 .dv{
- margin-left: 20px;
+margin-left: 20px;
 float: left;
 }
 p{
 text-align: center;
 font-size: larger;
 font-weight: bold;
-color: blue;
-background-color: rgb(208, 205, 205);
+color: rgb(245, 245, 249);
+border: 3px solid rgb(239, 3, 3);
+background-color: rgb(227, 8, 8);
 margin-left: 20px;
 margin-top: 0px;
 border-radius: 3px;
 }
 .bt{
-     margin-top: 0px;
-    margin-bottom: 30px;
-  text-align: center;
+  margin-top: 0px;
+ margin-bottom: 30px;
+text-align: center;
 }
 .btp{
-   cursor: pointer;  
+cursor: pointer;  
 text-align: center;
 font-size: medium;
 font-weight: 600;
-  color: white;
-  padding-right: 10px;
-   padding-left: 10px;
-   background-color: rgb(102, 230, 37);
-   border-radius: 3px;
-    margin-top: 0px;
+color: white;
+padding-right: 10px;
+padding-left: 10px;
+background-color: rgb(102, 230, 37);
+border-radius: 3px;
+ margin-top: 0px;
 }
 .tp{  
-   padding-top: 10px;
-   clear: left;     
-  text-align: center;
-  font-size: larger;
-   font-weight: bold;
+padding-top: 10px;
+clear: left;     
+text-align: center;
+font-size: larger;
+font-weight: bold;
 }
 .butt{
-    clear: left;
-     text-align: center;
-     
+ clear: left;
+  text-align: center;
+  
 }
 #btn{
-       margin-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-       background-color: rgb(32, 35, 220); 
-         color:white;
-         font-size: medium;
-          font-weight: 600;
-          border-radius: 3px;
-            cursor: pointer;
+    margin-top: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   border: 2px solid black;
+    background-color: rgb(203, 45, 9); 
+      color:white;
+      font-size: medium;
+       font-weight: 600;
+       border-radius: 3px;
+         cursor: pointer;
 }
 .class1{
-     background-color: rgb(20, 36, 204);
-      color: white;
-      font-size: medium;
-       font-weight: 700;
+  background-color: rgb(20, 36, 204);
+   color: white;
+   font-size: medium;
+    font-weight: 700;
 }
 #cal{
-      font-size: medium;
-      font-weight: 700;
+   font-size: medium;
+   font-weight: 700;
 }
 .tbl{
-        margin-left: 500px;
-        margin-top: 30px;
+     margin-left: 500px;
+     margin-top: 30px;
 }
-.spn{
-         font-size: medium;
-         font-weight: bolder;
+.spn{    color: rgb(243, 244, 246);
+      font-size: medium;
+      font-weight: bolder;
+      border: 3px solid black;
+      border-radius: 3px;
+      background-color: rgb(6, 74, 169);
 }
-  /* for smallar devices.... */
+#table1{
+      
+       border: 3px solid black;
+    background-color: greenyellow; 
+    color: rgb(4, 4, 4);
+    font-weight: 800;
+}
+#hd{
+  background-color: rgb(8, 70, 184);
+   font-weight: bolder;
+   color:white;
+}
+/* for smallar devices.... */
 @media only screen and (max-width:768px){
-       .tbl{
-           margin-left: 0px;
-       }
+    .tbl{
+        margin-left: 0px;
+    }
+        #table1{
+          width: 250px;
+        }
+        .spn{
+         width: 245px;
+        }
+    
+
 }
 /* for large devices .....*/
 @media only screen and (min-width:769px){
-
- }    
+#table1{
+ width: 500px;
+}
+.spn{
+ width: 495px;
+}
+}    
